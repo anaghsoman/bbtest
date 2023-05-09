@@ -1,0 +1,20 @@
+    SolverReset
+    SolverOk SetCell:="$DO$4681", MaxMinVal:=1, ValueOf:=0, ByChange:="$DO$8:$DO$9" _
+        , Engine:=3, EngineDesc:="Evolutionary"
+    SolverAdd CellRef:="$DO$8", Relation:=1, FormulaText:="$AW$9"
+    SolverAdd CellRef:="$DO$8", Relation:=3, FormulaText:="$AW$8"
+    SolverAdd CellRef:="$DO$9", Relation:=3, FormulaText:="$AW$8"
+    SolverAdd CellRef:="$DO$9", Relation:=1, FormulaText:="$AW$9"
+    SolverAdd CellRef:="$DO$4671", Relation:=3, FormulaText:="20"
+    SolverOk SetCell:="$DO$4681", MaxMinVal:=1, ValueOf:=0, ByChange:="$DO$8:$DO$9" _
+        , Engine:=3, EngineDesc:="Evolutionary"
+    SolverOptions MaxTime:=0, Iterations:=0, Precision:=0.000001, Convergence:= _
+        0.0001, StepThru:=False, Scaling:=True, AssumeNonNeg:=False, Derivatives:=1
+    SolverOptions PopulationSize:=300, RandomSeed:=0, MutationRate:=0.75, Multistart _
+        :=False, RequireBounds:=False, MaxSubproblems:=0, MaxIntegerSols:=0, _
+        IntTolerance:=1, SolveWithout:=False, MaxTimeNoImp:=60
+    SolverOk SetCell:="$DO$4681", MaxMinVal:=1, ValueOf:=0, ByChange:="$DO$8:$DO$9" _
+        , Engine:=3, EngineDesc:="Evolutionary"
+    SolverOk SetCell:="$DO$4681", MaxMinVal:=1, ValueOf:=0, ByChange:="$DO$8:$DO$9" _
+        , Engine:=3, EngineDesc:="Evolutionary"
+    SolverSolve UserFinish:=True
